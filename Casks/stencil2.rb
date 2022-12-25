@@ -4,6 +4,7 @@ cask "stencil2" do
   name "stencil2"
   desc "Map editor for MRT Map data"
   homepage "https://github.com/MRT-Map/stencil2"
+  sha256 "7a9ddc77943aa7460f96df0785492a8c34a2084fa05a230a725fc1d40dd5c7f7"
 
   auto_updates true
 
