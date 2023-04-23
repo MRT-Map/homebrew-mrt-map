@@ -1,10 +1,10 @@
 cask "stencil2" do
-  version "2.0.2"
+  version "2.0.3"
   url "https://github.com/MRT-Map/stencil2/releases/download/v#{version}/stencil2.dmg"
   name "stencil2"
   desc "Map editor for MRT Map data"
   homepage "https://github.com/MRT-Map/stencil2"
-  sha256 "1b64389ed48cc391634e804940989a8997c1f57a9f7524ab6f7e21fa0eae2605"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
   auto_updates true
 
