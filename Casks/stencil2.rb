@@ -1,5 +1,5 @@
 cask "stencil2" do
-  version "2.0.4"
+  version "2.0.5"
   url "https://github.com/MRT-Map/stencil2/releases/download/v#{version}/stencil2.dmg"
   name "stencil2"
   desc "Map editor for MRT Map data"
