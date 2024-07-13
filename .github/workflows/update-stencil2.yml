@@ -1,0 +1,18 @@
+on:
+  update-stencil2:
+  workflow-dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: curl "https://github.com/MRT-Map/stencil2/raw/master/build/macos/brew.rb" -Lo Casks/stencil2.rb
+    - run: |
+            git config --global user.name "github actions"
+            git config --global user.email "username@users.noreply.github.com"
+    - run: git commit -am "update @ $(date +%Y%m%dT%H:%M:%S%Z)"
+    - run: git push
