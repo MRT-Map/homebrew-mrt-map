@@ -10,7 +10,5 @@ cask "stencil2" do
   app "stencil2.app"
   binary "#{appdir}/stencil2.app/Contents/MacOS/stencil2"
 
-  zap trash: [
-    "~/Library/Application Support/stencil2",
-  ]
+  zap trash: ["~/Library/Application Support/stencil2"]
 end
