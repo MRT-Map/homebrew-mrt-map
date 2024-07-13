@@ -12,6 +12,6 @@ cask "stencil2" do
 
   zap trash: [
     "~/Library/Application Support/stencil2",
-    "~/Library/Caches/stencil2"
+    "~/Library/Caches/stencil2",
   ]
 end
