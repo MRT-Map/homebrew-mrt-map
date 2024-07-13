@@ -1,5 +1,4 @@
 on:
-  update-stencil2:
   workflow_dispatch:
 
 permissions:
