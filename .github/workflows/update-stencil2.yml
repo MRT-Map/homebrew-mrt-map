@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
     - run: curl "https://github.com/MRT-Map/stencil2/raw/master/build/macos/brew.rb" -Lo Casks/stencil2.rb
     - run: |
             git config --global user.name "github actions"
