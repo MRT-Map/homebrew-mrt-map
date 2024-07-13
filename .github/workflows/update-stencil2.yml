@@ -1,6 +1,6 @@
 on:
   update-stencil2:
-  workflow-dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: write
