@@ -1,4 +1,4 @@
-# Mrt-map Mrt-map
+# homebrew-mrt-map
 
 ## How do I install these formulae?
 
