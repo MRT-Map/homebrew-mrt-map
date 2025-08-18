@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - run: curl "https://github.com/MRT-Map/stencil2/raw/master/build/macos/brew.rb" -Lo Casks/stencil2.rb
     - run: echo "message=update @ $(date +%Y%m%dT%H:%M:%S%Z)" >> "$GITHUB_ENV"
     - uses: EndBug/add-and-commit@v9
