@@ -7,6 +7,8 @@ cask "stencil2" do
   desc "Map editor for MRT Map data"
   homepage "https://github.com/MRT-Map/stencil2"
 
+  depends_on :macos
+
   app "stencil2.app"
   binary "#{appdir}/stencil2.app/Contents/MacOS/stencil2"
 
