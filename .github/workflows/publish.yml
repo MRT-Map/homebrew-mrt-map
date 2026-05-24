@@ -8,7 +8,7 @@ on:
 jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       checks: read
@@ -17,12 +17,12 @@ jobs:
       pull-requests: write
     steps:
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@7a2984f77c47b370db00ef04a8531a293b169c9a # main
+        uses: Homebrew/actions/setup-homebrew@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up git
-        uses: Homebrew/actions/git-user-config@7a2984f77c47b370db00ef04a8531a293b169c9a # main
+        uses: Homebrew/actions/git-user-config@main
 
       - name: Pull bottles
         env:
@@ -31,7 +31,7 @@ jobs:
         run: brew pr-pull --debug --tap="$GITHUB_REPOSITORY" "$PULL_REQUEST"
 
       - name: Push commits
-        uses: Homebrew/actions/git-try-push@7a2984f77c47b370db00ef04a8531a293b169c9a # main
+        uses: Homebrew/actions/git-try-push@main
         with:
           branch: main
 
