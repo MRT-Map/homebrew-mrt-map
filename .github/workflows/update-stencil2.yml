@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - run: curl "https://github.com/MRT-Map/stencil2/raw/master/build/macos/brew.rb" -Lo Casks/stencil2.rb
     - run: echo "message=update @ $(date +%Y%m%dT%H:%M:%S%Z)" >> "$GITHUB_ENV"
-    - uses: EndBug/add-and-commit@fc1cf1dd8747466e3313305ba0d26460c62a7e59 # v11.1.0
+    - uses: EndBug/add-and-commit@cc9c08ba6c8df3b93a8f2db63e89b98368ae2ae8 # v11.1.1
       with:
         default_author: github_actions
         message: ${{ env.message }}
